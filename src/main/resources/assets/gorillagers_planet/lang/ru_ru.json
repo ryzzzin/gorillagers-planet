@@ -1,4 +1,5 @@
 {
-	"entity.gorillagers_planet.gorillager": "Обезьянин",
-	"item.gorillagers_planet.gorillager_spawn_egg": "Яйцо призыва обезьянина"
+	"entity.gorillagers_planet.gorillager": "\u0413\u043e\u0440\u0438\u043b\u043b\u044f\u043d\u0438\u043d",
+	"item.gorillagers_planet.gorillager_spawn_egg": "\u042f\u0439\u0446\u043e \u043f\u0440\u0438\u0437\u044b\u0432\u0430 \u0433\u043e\u0440\u0438\u043b\u043b\u044f\u043d\u0438\u043d\u0430",
+	"item.gorillagers_planet.banana": "\u0411\u0430\u043d\u0430\u043d"
 }

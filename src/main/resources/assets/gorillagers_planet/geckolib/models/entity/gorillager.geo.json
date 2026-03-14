@@ -105,6 +105,15 @@
 					"cubes": [
 						{"origin": [-1, 0, -5], "size": [2, 8, 2], "uv": [20, 23]}
 					]
+				},
+				{
+					"name": "locator",
+					"parent": "right_arm",
+					"pivot": [-1, 1, -4],
+					"rotation": [0, -90, 0],
+					"locators": {
+						"locator": [0, 1, -4]
+					}
 				}
 			]
 		}
