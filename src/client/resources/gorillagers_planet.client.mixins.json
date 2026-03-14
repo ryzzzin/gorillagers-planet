@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "com.example.mixin.client",
+	"package": "com.gorillagers.planet.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-		"ExampleClientMixin"
+		"GorillagersPlanetClientMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

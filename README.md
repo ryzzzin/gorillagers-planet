@@ -1,8 +1,16 @@
-# Fabric Example Mod
+# Gorillagers Planet
 
-## Setup
+Fabric мод с мобом `Gorillager` (Гориллянин), GeckoLib-анимациями и яйцом спавна.
 
-For setup instructions please see the [fabric documentation page](https://docs.fabricmc.net/develop/getting-started/setting-up) that relates to the IDE that you are using.
+## Run
+
+```bash
+./gradlew runClient
+```
+
+Проверка в игре:
+- `/summon gorillagers_planet:gorillager`
+- `/give @p gorillagers_planet:gorillager_spawn_egg`
 
 ## License
 

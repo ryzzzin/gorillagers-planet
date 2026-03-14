@@ -1,31 +1,31 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "gorillagers_planet",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Gorillagers Planet",
+	"description": "Adds gorillagers and expands your world with monkey-themed content.",
 	"authors": [
-		"Me!"
+		"rysin"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "",
+		"sources": ""
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/gorillagers_planet/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.gorillagers.planet.GorillagersPlanetMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.gorillagers.planet.GorillagersPlanetModClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"gorillagers_planet.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "gorillagers_planet.client.mixins.json",
 			"environment": "client"
 		}
 	],
@@ -33,9 +33,7 @@
 		"fabricloader": ">=0.18.2",
 		"minecraft": "~1.21.11",
 		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"fabric-api": "*",
+		"geckolib": "*"
 	}
 }
