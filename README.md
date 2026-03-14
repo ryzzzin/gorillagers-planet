@@ -1,17 +1,14 @@
 # Gorillagers Planet
 
-Fabric мод с мобом `Gorillager` (Гориллянин), GeckoLib-анимациями и яйцом спавна.
+Gorillagers Planet is a Fabric mod for Minecraft `1.21.11` that adds a new animated mob called Gorillager.
 
-## Run
+## Features
 
-```bash
-./gradlew runClient
-```
+- Adds the Gorillager mob with GeckoLib model and animation support.
+- Includes `walk` and `idle` animations for the Gorillager.
+- Adds a Gorillager Spawn Egg item with a custom icon.
+- Uses custom model, animation, and texture assets for the mob and spawn egg.
 
-Проверка в игре:
-- `/summon gorillagers_planet:gorillager`
-- `/give @p gorillagers_planet:gorillager_spawn_egg`
+## Version
 
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Current mod version: `1.0.0`.
