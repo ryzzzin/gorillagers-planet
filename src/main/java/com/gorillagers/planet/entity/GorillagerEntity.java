@@ -6,6 +6,8 @@ import java.util.UUID;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.Goal;
@@ -14,7 +16,6 @@ import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -29,7 +30,7 @@ import software.bernie.geckolib.animation.object.PlayState;
 import software.bernie.geckolib.animation.state.AnimationTest;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
-public class GorillagerEntity extends Monster implements GeoEntity {
+public class GorillagerEntity extends PathfinderMob implements GeoEntity {
 	private static final int COOKIE_MIN_AGE_TICKS = 20;
 	private static final RawAnimation WALK_ANIMATION = RawAnimation.begin().thenLoop("walk");
 	private static final RawAnimation IDLE_ANIMATION = RawAnimation.begin().thenLoop("idle");
@@ -40,12 +41,12 @@ public class GorillagerEntity extends Monster implements GeoEntity {
 	private int tradeTicksRemaining = 0;
 	private UUID tradingPlayerUuid;
 
-	public GorillagerEntity(EntityType<? extends Monster> entityType, Level world) {
+	public GorillagerEntity(EntityType<? extends PathfinderMob> entityType, Level world) {
 		super(entityType, world);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
-		return Monster.createMonsterAttributes()
+		return Mob.createMobAttributes()
 			.add(Attributes.MAX_HEALTH, 20.0)
 			.add(Attributes.MOVEMENT_SPEED, 0.22)
 			.add(Attributes.ATTACK_DAMAGE, 3.0)
